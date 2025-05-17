@@ -87,7 +87,7 @@ def suggestion_crop_based_on_month():
         if season_key:
             print(f"season found: {season_key.capitalize()}")
             print(" ")
-            crops_data = season_suggest[season_key]
+            crops_data = season_suggest(season_key)
             if season_key in crops_data:
                 for x, y in crops_data.items():
                     print("crop recomanded:")
@@ -101,27 +101,3 @@ def suggestion_crop_based_on_month():
 
 # Start the program
 suggestion_crop_based_on_month()
-
-
-
-# rabi(1) = 
-rabi,
-Cereal,Wheat,Barley,Maize
-Pulses,Lentil,Masur,Chickpea
-Oilseeds,Mustard,Sesame
-Vegetables,Tomato,Cauliflower,Cabbage
-Spices,Onion,Garlic,Coriander
-Kharif1,
-Cereal,Aus paddy
-Pulses,Mung,bean,Black,gram
-Oilseeds,Sesame,Sunflower
-Vegetables,Okra,Pumpkin,Snake gourd
-Kharif2,
-Cereal,Aman paddy
-Vegetables,Brinjal,Tomato,Chilli
-Others,Jute,Turmeric,Ginger
-
-# rabi(2) = 
-rabi,november,december,january,february
-kharif1,'march,april,may,june
-kharif2,july,august,september,october
